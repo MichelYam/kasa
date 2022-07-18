@@ -1,0 +1,9 @@
+// pages
+@use "pages/home";
+@use "pages/error";
+@use "pages/about";
+@use "pages/apartment";
+
+// layout
+@use "layout/header";
+@use "layout/footer";

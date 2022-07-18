@@ -3,16 +3,19 @@ import { Link } from 'react-router-dom';
 
 
 export default function Header() {
-    const routes = {
-        Home: '/',
-    }
+    // const routes = {
+    //     Home: '/',
+    // }
     return (
-        <header>
-            <nav >
-                <img src="" alt="" />
-                <ul>
-                    <li>
-                        <Link></Link>
+        <header className='header'>
+            <nav className='navbar'>
+                <img src="../../../public/assets/logo/logo_header.png" alt="logo du site" />
+                <ul className='navbar-menu'>
+                    <li className='navbar-menu-item'>
+                        <Link to='/'>Accueil</Link>
+                    </li>
+                    <li className='navbar-menu-item'>
+                        <Link to='/About'>A Propos</Link>
                     </li>
                 </ul>
             </nav>
