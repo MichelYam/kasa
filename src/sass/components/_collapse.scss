@@ -1,0 +1,61 @@
+.collapsible {
+    width: 48%;
+    color: #ff6060;
+    font-size: 18px;
+    line-height: 24px;
+    &-header {
+        position: relative;
+        background-color: #ff6060;
+        color: #ffffff;
+        padding: 17px;
+        border-radius: 15px;
+    }
+
+    .arrow {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        right: 5%;
+        margin: -20px 0 0 -20px;
+        transform: rotate(45deg);
+        &::before {
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 15px;
+            left: 50%;
+            top: 50%;
+            margin-top: -15px;
+            border-width: 3px;
+            border-style: solid;
+            border-color: transparent;
+            border-bottom-color: #fff;
+            border-right-color: #fff;
+        }
+
+        &.open {
+            transform: rotate(270deg);
+        }
+    }
+
+    &-content {
+        padding: 25px 17px 17px 17px;
+        background-color: #f7f7f7;
+        border-radius: 15px;
+        margin-top: -10px;
+        height: 150px;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+            }
+        }
+        p {
+            margin: 0;
+        }
+    }
+}

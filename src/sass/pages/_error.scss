@@ -1,0 +1,27 @@
+.error-content {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ff6060;
+    h1 {
+        font-family: "Montserrat";
+        font-size: 245px;
+        font-weight: 700;
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+    p{
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 225px;
+        letter-spacing: 1px;
+    }
+    a {
+        font-size: 20px;
+        font-weight: 400;
+        color: #ff6060;
+        text-decoration: underline;
+    }
+}
