@@ -4,16 +4,19 @@ import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
     let location = useLocation();
+
+    const { pathname } = location;
+    const splitLocation = pathname.split('/')
     return (
         <header className='header'>
             <nav className='navbar'>
                 <Link to='/'><img src="../assets/logo/logo_header.png" alt="logo du site" /></Link>
                 <ul className='navbar-menu'>
                     <li className='navbar-menu-item'>
-                        <Link to='/'>Accueil</Link>
+                        <Link className={splitLocation[1] === '' ? 'active' : ''} to='/'>Accueil</Link>
                     </li>
                     <li className='navbar-menu-item'>
-                        <Link to='/about'>A Propos</Link>
+                        <Link className={splitLocation[1] === 'about' ? 'active' : ''} to='/about'>A Propos</Link>
                     </li>
                 </ul>
             </nav>

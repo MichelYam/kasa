@@ -21,14 +21,14 @@ export default function Apartment({ apartmentsData }) {
           <p>{apartment.location}</p>
           <div className='apartment-tags'>
             {apartment.tags.map((tag) => {
-              return <div key={tag} className='tag'>{tag}</div>
+              return <div key={tag} className='tag'><span>{tag}</span></div>
             })}
           </div>
         </div>
         <div className='user'>
           <div className='flex user-avatar'>
             <p>{apartment.host.name}</p>
-            <img src={apartment.host.picture} alt='photo du propriétaire' />
+            <img src={apartment.host.picture} alt='cover du propriétaire' />
           </div>
           <div className='user-star'>
             {[...Array(5)].map((star, index) => {

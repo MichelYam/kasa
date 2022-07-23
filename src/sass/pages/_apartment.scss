@@ -23,18 +23,36 @@
     &-tags {
         display: flex;
         line-height: 1.5;
+        @media screen and (max-width: 425px) {
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
         .tag {
             background-color: #ff6060;
             color: #ffffff;
-            border-radius: 10px;
+            border-radius: 15px;
             margin-right: 10px;
-            padding: 10px;
+            // width: 115px;
+            padding: 5px;
             height: 25px;
+            text-align: center;
+            min-width: 115px;
+            @media screen and (max-width: 425px) {
+                margin-bottom: 15px;
+                margin-right: 10px;
+                min-width: 84px;
+            }
+            span {
+                font-size: 12px;
+            }
         }
     }
     &-location {
         h2 {
             margin-top: 0;
+            @media screen and (max-width: 425px) {
+                font-size: 20px;
+            }
         }
     }
     .user {

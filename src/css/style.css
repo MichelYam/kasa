@@ -321,16 +321,39 @@ input[type=checkbox], input[type=radio] {
   display: flex;
   line-height: 1.5;
 }
+@media screen and (max-width: 425px) {
+  .apartment-tags {
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+}
 .apartment-tags .tag {
   background-color: #ff6060;
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-right: 10px;
-  padding: 10px;
+  padding: 5px;
   height: 25px;
+  text-align: center;
+  min-width: 115px;
+}
+@media screen and (max-width: 425px) {
+  .apartment-tags .tag {
+    margin-bottom: 15px;
+    margin-right: 10px;
+    min-width: 84px;
+  }
+}
+.apartment-tags .tag span {
+  font-size: 12px;
 }
 .apartment-location h2 {
   margin-top: 0;
+}
+@media screen and (max-width: 425px) {
+  .apartment-location h2 {
+    font-size: 20px;
+  }
 }
 .apartment .user {
   display: flex;
@@ -516,6 +539,9 @@ header .navbar-menu-item a {
     text-transform: uppercase;
     font-size: 15px;
   }
+}
+header .navbar-menu-item .active {
+  text-decoration: underline;
 }
 header .header-banner {
   width: 100%;
