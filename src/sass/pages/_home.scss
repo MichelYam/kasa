@@ -2,8 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     padding: 60px;
     border-radius: 10px;
 
+    @media screen and (max-width: 425px) {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 50px;
+    }
 }

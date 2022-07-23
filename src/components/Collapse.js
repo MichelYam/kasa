@@ -10,13 +10,15 @@ export default function Collapse(props) {
         <div className='collapsible'>
             <div className='collapsible-header' onClick={toggle}>
                 {props.label}
-                <div className={`arrow ${open ? 'open' : null}`}></div>
-            </div>
-            {open ?
-                <div className='collapsible-content'>
-                    {props.children}
-                </div> : null
+                <i className={`fa-solid ${open ? 'fa-angle-up' : 'fa-angle-down'}`}></i>
+            </div >
+            {
+                open ?
+                    <div className='collapsible-content'>
+                        {props.children}
+                    </div> : null
             }
-        </div>
+        </div >
     )
 }
+

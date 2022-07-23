@@ -1,0 +1,13 @@
+.collapse-list{
+    margin: 25px 0;
+
+    .collapsible{
+        width: calc(100% - 25%);
+        margin: auto;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
+    }
+}

@@ -1,10 +1,12 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-// import Footer from '../components/Footer/Footer';
 
 // components
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 import Collapse from '../components/Collapse';
+import Caroussel from '../components/Carousel';
+
 export default function Apartment({ apartmentsData }) {
   const { id } = useParams();
   const apartment = apartmentsData.find((ele) => ele.id === id);
@@ -12,31 +14,31 @@ export default function Apartment({ apartmentsData }) {
   return (
     <>
       <Header />
-      {/* carrousel */}
+      <Caroussel pictures={apartment.pictures} />
       <div className='flex apartment'>
-        <div>
+        <div className='apartment-location'>
           <h2>{apartment.title}</h2>
           <p>{apartment.location}</p>
           <div className='apartment-tags'>
             {apartment.tags.map((tag) => {
-              return <div className='tag'>{tag}</div>
+              return <div key={tag} className='tag'>{tag}</div>
             })}
           </div>
         </div>
-        <div className='flex column'>
-          <div className='flex apartment-avatar'>
+        <div className='user'>
+          <div className='flex user-avatar'>
             <p>{apartment.host.name}</p>
             <img src={apartment.host.picture} alt='photo du propriétaire' />
           </div>
-          <div className='apartment-star'>
+          <div className='user-star'>
             {[...Array(5)].map((star, index) => {
               index += 1;
-              return (<i className={`fa-solid fa-star ${index <= apartment.rating ? "star-on" : "star"}`}></i>);
+              return (<i key={index} className={`fa-solid fa-star ${index <= apartment.rating ? "star-on" : "star"}`}></i>);
             })}
           </div>
         </div>
       </div>
-      <div className='flex space-between'>
+      <div className='collapse-container'>
         <Collapse label="Description">
           <p>{apartment.description}</p>
         </Collapse>
@@ -48,7 +50,7 @@ export default function Apartment({ apartmentsData }) {
           </ul>
         </Collapse>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
