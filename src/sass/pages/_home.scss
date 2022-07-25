@@ -1,11 +1,15 @@
 .apartments-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+    flex-flow: row wrap;
+    gap: 50px;
+    // justify-content: space-between;
     background-color: #f7f7f7;
     padding: 60px;
-    border-radius: 10px;
-
+    border-radius: 15px;
+    &::after {
+        content: "";
+        flex: auto;
+    }
     @media screen and (max-width: 425px) {
         background-color: transparent;
         padding: 0;
