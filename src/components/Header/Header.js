@@ -3,10 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 
 
 export default function Header() {
-    let location = useLocation();
+    let location = useLocation(); //get object that represents the current url
 
     const { pathname } = location;
-    const splitLocation = pathname.split('/')
+    const splitLocation = pathname.split('/');
+    
     return (
         <header className='header'>
             <nav className='navbar'>
@@ -23,7 +24,7 @@ export default function Header() {
             {location.pathname === "/" ?
                 <div className='header-banner'>
                     <p>Chez vous, partout et ailleurs</p>
-                </div> : location.pathname === "/about" ?
+                </div> : splitLocation[1] === 'about' ?
                     <div className='header-banner-about'>
                     </div> : null
             }

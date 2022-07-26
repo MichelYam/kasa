@@ -75,6 +75,7 @@ header {
 
         @media screen and (max-width: 425px) {
             @include bg_img('../../public/assets/images/gustavo-alves-YOXSC4zRcxw-unsplash 1.png');
+            border-radius: 15px;
         }
     }
 }

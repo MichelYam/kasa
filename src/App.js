@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import './App.css';
-// data
+
+// import apartment data
 import apartmentsData from './data/data.json';
 // Pages
 import Home from './pages/Home';
