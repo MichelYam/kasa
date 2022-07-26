@@ -21,10 +21,16 @@ export default function Carousel({ pictures }) {
     }
     return (
         <div className='carousel'>
-            <i className='fa-solid fa-angle-left' onClick={previous} />
-            <i className='fa-solid fa-angle-right' onClick={next} />
+            {pictures.length !== 1 ?
+                <>
+                    <i className='fa-solid fa-angle-left' onClick={previous} />
+                    <i className='fa-solid fa-angle-right' onClick={next} />
+                </>
+                : null
+            }
             <img src={pictures[currentId]} alt='gallery' />
             <div className='carousel-indicator'>{currentId + 1}/{pictures.length}</div>
+
         </div>
     )
 }
