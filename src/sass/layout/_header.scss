@@ -11,8 +11,8 @@ header {
         justify-content: space-between;
         align-items: center;
         img {
-            @media screen and (max-width: 425px) {
-                width: 150px;
+            @media screen and (max-width: 768px) {
+                width: 125px;
             }
         }
         &-menu {

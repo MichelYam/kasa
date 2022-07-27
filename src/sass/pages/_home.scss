@@ -1,8 +1,8 @@
 .apartments-list {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     gap: 50px;
-    // justify-content: space-between;
     background-color: #f7f7f7;
     padding: 60px;
     border-radius: 15px;

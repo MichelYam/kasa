@@ -262,6 +262,7 @@ li {
 .apartments-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   gap: 50px;
   background-color: #f7f7f7;
   padding: 60px;
@@ -439,10 +440,15 @@ li {
 
 .apartment-card {
   position: relative;
-  width: 29.6666666667%;
+  width: 30%;
   height: 340px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1118px) {
+  .apartment-card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 650px) {
   .apartment-card {
     width: 100%;
   }
@@ -553,9 +559,9 @@ header .navbar {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   header .navbar img {
-    width: 150px;
+    width: 125px;
   }
 }
 header .navbar-menu {
