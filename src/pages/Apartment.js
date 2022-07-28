@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
 // components
 import Header from '../components/Header/Header';
@@ -10,7 +10,9 @@ import Caroussel from '../components/Carousel';
 export default function Apartment({ apartmentsData }) {
   const { id } = useParams(); //get id form url
   const apartment = apartmentsData.find((ele) => ele.id === id); // get all information about location
-
+  if (!apartment) {
+    return <Navigate to="/error" />
+  }
   return (
     <>
       <Header />

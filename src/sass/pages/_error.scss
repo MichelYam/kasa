@@ -3,25 +3,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     color: #ff6060;
-    h1 {
+    h2 {
         font-family: "Montserrat";
         font-size: 245px;
         font-weight: 700;
         margin-top: 0px;
         margin-bottom: 12px;
+        @media screen and (max-width: 425px) {
+            font-size: 96px;
+        }
     }
-    p{
+    p {
         font-size: 32px;
         font-weight: 400;
         margin-bottom: 225px;
         letter-spacing: 1px;
+        @media screen and (max-width: 425px) {
+            font-size: 18px;
+            margin-bottom: 125px;
+        }
     }
     a {
         font-size: 20px;
         font-weight: 400;
         color: #ff6060;
         text-decoration: underline;
+        @media screen and (max-width: 425px) {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
     }
 }

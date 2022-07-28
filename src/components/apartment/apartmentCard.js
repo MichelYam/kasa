@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom'
 export default function apartmentCard({ apartment }) {
     return (
         <Link className="apartment-card" to={`/apartment/${apartment.id}`} key={apartment.id} apartment={apartment} >
-            <img src={apartment.cover} alt='aperçu de la location' />
-            < p > {apartment.title}</p >
+            <div className='apartment-card-img' style={{
+                backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(${apartment.cover})`
+            }}></div>
+            <p> {apartment.title}</p>
         </Link >
     )
 }

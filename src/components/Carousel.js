@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 export default function Carousel({ pictures }) {
 
@@ -28,8 +28,10 @@ export default function Carousel({ pictures }) {
                 </>
                 : null
             }
-            <img src={pictures[currentId]} alt='gallery' />
-            <div className='carousel-indicator'>{currentId + 1}/{pictures.length}</div>
+            <>
+                <img src={pictures[currentId]} alt='gallery' />
+                <div className='carousel-indicator'>{currentId + 1}/{pictures.length}</div>
+            </>
 
         </div>
     )
