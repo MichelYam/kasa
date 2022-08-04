@@ -356,7 +356,7 @@ li {
   margin-bottom: 25px;
   justify-content: space-between;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .apartment {
     flex-direction: column;
   }
@@ -369,7 +369,7 @@ li {
   display: flex;
   line-height: 1.5;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .apartment-tags {
     margin-bottom: 15px;
     flex-wrap: wrap;
@@ -384,7 +384,7 @@ li {
   text-align: center;
   min-width: 115px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .apartment-tags .tag {
     margin-bottom: 15px;
     margin-right: 10px;
@@ -397,7 +397,7 @@ li {
 .apartment-location h2 {
   margin: 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .apartment-location h2 {
     font-size: 20px;
   }
@@ -410,7 +410,7 @@ li {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .apartment .user {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -421,7 +421,7 @@ li {
   text-align: right;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .apartment .user-avatar {
     margin: 0;
   }
@@ -448,7 +448,7 @@ li {
   justify-content: space-between;
   margin-bottom: 48px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .collapse-container {
     flex-direction: column;
   }
@@ -458,6 +458,11 @@ li {
   position: relative;
   width: 30%;
   height: 340px;
+}
+@media screen and (max-width: 1151px) {
+  .apartment-card {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 650px) {
   .apartment-card {
@@ -473,11 +478,13 @@ li {
 }
 .apartment-card p {
   position: absolute;
-  left: 5%;
-  bottom: 2%;
+  width: 100%;
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
   text-decoration: none;
   color: #ffffff;
-  max-width: 220px;
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
@@ -489,7 +496,7 @@ li {
   font-size: 18px;
   line-height: 24px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .collapsible {
     width: 100%;
     margin-bottom: 25px;
@@ -531,7 +538,8 @@ li {
 .carousel {
   position: relative;
   width: 100%;
-  height: 415px;
+  max-height: 400px;
+  min-height: 400px;
   margin: 30px 0;
 }
 .carousel img {

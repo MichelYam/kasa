@@ -10,6 +10,8 @@ import Caroussel from '../components/Carousel';
 export default function Apartment({ apartmentsData }) {
   const { id } = useParams(); //get id form url
   const apartment = apartmentsData.find((ele) => ele.id === id); // get all information about location
+
+  // redirect user if apartment not found
   if (!apartment) {
     return <Navigate to="/error" />
   }

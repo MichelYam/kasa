@@ -2,15 +2,12 @@
     position: relative;
     width: calc(90% / 3);
     height: 340px;
-
-    @media screen and (max-width: 1118px) {
+    @media screen and (max-width: 1151px) {
+        width: calc(90% / 2);
     }
     @media screen and (max-width: 650px) {
         width: 100%;
     }
-    // .bg-apartment{
-    //     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    // }
     &-img {
         width: 100%;
         height: 100%;
@@ -20,11 +17,13 @@
     }
     p {
         position: absolute;
-        left: 5%;
-        bottom: 2%;
+        width: 100%;
+        left: 5.88%;
+        right: 5.88%;
+        top: 78.82%;
+        bottom: 5.88%;
         text-decoration: none;
         color: #ffffff;
-        max-width: 220px;
         font-weight: 500;
         font-size: 18px;
         line-height: 30px;

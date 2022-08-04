@@ -29,6 +29,15 @@ export default function Carousel({ pictures }) {
                 : null
             }
             <>
+                {/* {
+                    pictures.map((pictures, index) => {
+                        return (
+                            <div>
+                                {index === currentId && <img src={pictures[currentId]} alt='gallery' />}
+                            </div>
+                        )
+                    })
+                } */}
                 <img src={pictures[currentId]} alt='gallery' />
                 <div className='carousel-indicator'>{currentId + 1}/{pictures.length}</div>
             </>
