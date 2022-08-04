@@ -6,11 +6,12 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import Collapse from '../components/Collapse';
 import Caroussel from '../components/Carousel';
+import Star from '../components/Star';
+import Tag from '../components/Tag';
 
 export default function Apartment({ apartmentsData }) {
   const { id } = useParams(); //get id form url
   const apartment = apartmentsData.find((ele) => ele.id === id); // get all information about location
-
   // redirect user if apartment not found
   if (!apartment) {
     return <Navigate to="/error" />
@@ -25,7 +26,7 @@ export default function Apartment({ apartmentsData }) {
           <p>{apartment.location}</p>
           <div className='apartment-tags'>
             {apartment.tags.map((tag) => {
-              return <div key={tag} className='tag'><span>{tag}</span></div>
+              return <Tag key={tag} label={tag} />
             })}
           </div>
         </div>
@@ -37,7 +38,7 @@ export default function Apartment({ apartmentsData }) {
           <div className='user-star'>
             {[...Array(5)].map((star, index) => {
               index += 1;
-              return (<i key={index} className={`fa-solid fa-star ${index <= apartment.rating ? "star-on" : "star"}`}></i>);
+              return (<Star key={index} index={index} rate={apartment.rating} />);
             })}
           </div>
         </div>

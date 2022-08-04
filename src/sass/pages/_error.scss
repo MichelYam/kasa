@@ -12,7 +12,7 @@
         font-weight: 700;
         margin-top: 0px;
         margin-bottom: 12px;
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 511px) {
             font-size: 96px;
         }
     }
@@ -21,7 +21,7 @@
         font-weight: 400;
         margin-bottom: 225px;
         letter-spacing: 1px;
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 511px) {
             font-size: 18px;
             margin-bottom: 125px;
         }
@@ -31,11 +31,11 @@
         font-weight: 400;
         color: #ff6060;
         text-decoration: underline;
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 511px) {
             font-size: 14px;
         }
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 511px) {
     }
 }

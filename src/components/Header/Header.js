@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <header className='header'>
             <nav className='navbar'>
-                <Link to='/'><img src="../assets/logo/logo_header.png" alt="logo du site" /></Link>
+                <Link to='/'><img src="/assets/logo/logo_header.png" alt="logo du site" /></Link>
                 <ul className='navbar-menu'>
                     <li className='navbar-menu-item'>
                         <Link className={splitLocation[1] === '' ? 'active' : ''} to='/'>Accueil</Link>

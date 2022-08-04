@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function apartmentCard({ apartment }) {
+export default function ApartmentCard({ apartment }) {
     return (
         <Link className="apartment-card" to={`/apartment/${apartment.id}`} key={apartment.id} apartment={apartment} >
             <div className='apartment-card-img' style={{

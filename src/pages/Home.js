@@ -3,7 +3,7 @@ import React from 'react';
 // components
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import ApartmentCard from '../components/Apartment/apartmentCard';
+import ApartmentCard from '../components/Apartment/ApartmentCard';
 
 export default function Home({ apartmentsData }) {
     return (

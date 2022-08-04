@@ -296,7 +296,7 @@ li {
   margin-top: 0px;
   margin-bottom: 12px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 511px) {
   .error-content h2 {
     font-size: 96px;
   }
@@ -307,7 +307,7 @@ li {
   margin-bottom: 225px;
   letter-spacing: 1px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 511px) {
   .error-content p {
     font-size: 18px;
     margin-bottom: 125px;
@@ -319,7 +319,7 @@ li {
   color: #ff6060;
   text-decoration: underline;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 511px) {
   .error-content a {
     font-size: 14px;
   }
@@ -464,7 +464,7 @@ li {
     width: 45%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   .apartment-card {
     width: 100%;
   }
@@ -475,6 +475,7 @@ li {
   border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .apartment-card p {
   position: absolute;
