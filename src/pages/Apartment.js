@@ -4,10 +4,10 @@ import { Navigate, useParams } from 'react-router-dom';
 // components
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import Collapse from '../components/Collapse';
-import Caroussel from '../components/Carousel';
-import Star from '../components/Star';
-import Tag from '../components/Tag';
+import Collapse from '../components/Collapse/Collapse';
+import Caroussel from '../components/Carrousel/Carousel';
+import Star from '../components/Star/Star';
+import Tag from '../components/Tag/Tag';
 
 export default function Apartment({ apartmentsData }) {
   const { id } = useParams(); //get id form url

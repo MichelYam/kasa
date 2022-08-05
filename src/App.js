@@ -10,7 +10,7 @@ import About from './pages/About';
 import Error from './pages/NotFound';
 
 // css
-import "./css/style.css";
+import "./sass/style.scss";
 
 function App() {
   return (

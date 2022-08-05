@@ -1,0 +1,49 @@
+@mixin bg_img($imgPath) {
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.3)), url($imgPath);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    &_banner {
+        width: 100%;
+        height: 223px;
+        border-radius: 30px;
+        @include bg_img("../../../public/assets/images/IMG.png");
+        margin: 48px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 425px) {
+            height: 111px;
+            border-radius: 15px;
+            justify-content: flex-start;
+            @include bg_img("../../../public/assets/images/IMG_XM.png");
+        }
+        &_about {
+            width: 100%;
+            height: 223px;
+            border-radius: 30px;
+            @include bg_img("../../../public/assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png");
+            margin: 48px 0;
+
+            @media screen and (max-width: 425px) {
+                @include bg_img("../../../public/assets/images/gustavo-alves-YOXSC4zRcxw-unsplash 1.png");
+                border-radius: 15px;
+            }
+        }
+        p {
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 48px;
+            margin: 0;
+            @media screen and (max-width: 425px) {
+                font-size: 21px;
+                width: 218px;
+                padding-left: 25px;
+            }
+        }
+    }
+}

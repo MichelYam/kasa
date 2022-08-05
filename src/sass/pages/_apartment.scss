@@ -27,22 +27,8 @@
             margin-bottom: 15px;
             flex-wrap: wrap;
         }
-        .tag {
-            background-color: #ff6060;
-            color: #ffffff;
-            border-radius: 15px;
-            margin-right: 10px;
-            padding: 5px 15px;
-            text-align: center;
-            min-width: 115px;
-            @media screen and (max-width: 600px) {
-                margin-bottom: 15px;
-                margin-right: 10px;
-                min-width: 84px;
-            }
-            span {
-                font-size: 12px;
-            }
+        span {
+            font-size: 12px;
         }
     }
     &-location {
@@ -52,43 +38,31 @@
                 font-size: 20px;
             }
         }
-        p{
+        p {
             margin: 13px 0;
         }
     }
-    .user {
-        display: flex;
-        flex-direction: column;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    &-avatar {
         align-items: center;
+        text-align: right;
+        margin-bottom: 30px;
         @media screen and (max-width: 600px) {
-            flex-direction: row-reverse;
-            justify-content: space-between;
+            margin: 0;
         }
-        &-avatar {
-            align-items: center;
-            text-align: right;
-            margin-bottom: 30px;
-            @media screen and (max-width: 600px) {
-                margin: 0;
-            }
-            p {
-                width: 80px;
-                margin-right: 15px;
-                margin-bottom: 0;
-                margin-top: 0;
-            }
-        }
-        &-star {
-            .fa-star {
-                width: 30px;
-                height: 30px;
-            }
-            .star-on {
-                color: #ff6060;
-            }
-            .star {
-                color: #e3e3e3;
-            }
+        p {
+            width: 80px;
+            margin-right: 15px;
+            margin-bottom: 0;
+            margin-top: 0;
         }
     }
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./_carousel.scss";
 
 export default function Carousel({ pictures }) {
 
