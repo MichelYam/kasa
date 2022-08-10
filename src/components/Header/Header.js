@@ -10,7 +10,7 @@ export default function Header() {
 
     const { pathname } = location;
     const splitLocation = pathname.split('/');
-    console.log(pathname)
+
     return (
         <header className='header'>
             <NavBar splitLocation={splitLocation} />

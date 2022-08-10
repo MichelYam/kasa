@@ -1,6 +1,7 @@
+@import "../../sass/utils/variables";
 .collapsible {
     width: 48%;
-    color: #ff6060;
+    color: $primary-color;
     font-size: 18px;
     line-height: 24px;
     @media screen and (max-width: 600px) {
@@ -9,12 +10,12 @@
     }
     &-header {
         position: relative;
-        background-color: #ff6060;
+        background-color: $primary-color;
         color: #ffffff;
         padding: 17px;
         border-radius: 15px;
 
-        .fa-solid{
+        .fa-solid {
             position: absolute;
             right: 5%;
             top: 33%;
@@ -22,7 +23,7 @@
             cursor: pointer;
         }
     }
-    
+
     &-content {
         padding: 25px 17px 17px 17px;
         background-color: #f7f7f7;

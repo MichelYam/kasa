@@ -1,9 +1,4 @@
-@mixin bg_img($imgPath) {
-    background: linear-gradient(0deg, rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.3)), url($imgPath);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+@import "../../sass/utils/mixins";
 
 .header {
     &_banner {
@@ -19,7 +14,6 @@
             height: 111px;
             border-radius: 15px;
             justify-content: flex-start;
-            @include bg_img("../../../public/assets/images/IMG_XM.png");
         }
         &_about {
             width: 100%;
@@ -42,6 +36,9 @@
             @media screen and (max-width: 425px) {
                 font-size: 21px;
                 width: 218px;
+                padding-left: 25px;
+            }
+            @media screen and (max-width: 768px) {
                 padding-left: 25px;
             }
         }

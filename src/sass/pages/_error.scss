@@ -1,3 +1,4 @@
+@import "../utils/variables";
 .error-content {
     height: 92vh;
     display: flex;
@@ -5,7 +6,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    color: #ff6060;
+    color: $primary-color;
     h2 {
         font-family: "Montserrat";
         font-size: 245px;
@@ -19,17 +20,17 @@
     p {
         font-size: 32px;
         font-weight: 400;
-        margin-bottom: 225px;
+        margin-bottom: 125px;
         letter-spacing: 1px;
         @media screen and (max-width: 511px) {
             font-size: 18px;
-            margin-bottom: 125px;
+            // margin-bottom: 125px;
         }
     }
     a {
         font-size: 20px;
         font-weight: 400;
-        color: #ff6060;
+        color: $primary-color;
         text-decoration: underline;
         @media screen and (max-width: 511px) {
             font-size: 14px;
