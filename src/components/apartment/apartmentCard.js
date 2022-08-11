@@ -11,6 +11,7 @@ export default function ApartmentCard({ apartment }) {
                 backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(${apartment.cover})`
             }}></div>
             <p> {apartment.title}</p>
+            <p>test</p>
         </Link >
     )
 }
