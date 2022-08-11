@@ -18,7 +18,7 @@ export default function Apartment({ apartmentsData }) {
   }
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Caroussel pictures={apartment.pictures} />
       <div className='flex apartment'>
         <div className='apartment-location'>
@@ -55,7 +55,7 @@ export default function Apartment({ apartmentsData }) {
           </ul>
         </Collapse>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

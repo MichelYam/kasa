@@ -34,5 +34,8 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 30px;
+        @media screen and (max-width: 425px) {
+            top: 70%;
+        }
     }
 }

@@ -1,15 +1,15 @@
 import React from 'react';
 
 // components
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 import ApartmentCard from '../components/Apartment/ApartmentCard';
 
 export default function Home({ apartmentsData }) {
     return (
         <>
-            <Header />
             <main>
+                <div className='header_banner'>
+                    <p>Chez vous, partout et ailleurs</p>
+                </div>
                 <section>
                     <div className="apartments-list">
                         {apartmentsData.map((apartment) => {
@@ -18,7 +18,6 @@ export default function Home({ apartmentsData }) {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     )
 }

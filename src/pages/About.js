@@ -8,7 +8,7 @@ import Collapse from '../components/Collapse/Collapse';
 export default function About() {
   return (
     <>
-      <Header />
+      <div className='header_banner_about'></div>
       <section>
         <div className='collapse-list'>
           <Collapse label='Fiabilité' >
@@ -25,7 +25,6 @@ export default function About() {
           </Collapse>
         </div>
       </section>
-      <Footer />
     </>
   )
 }
