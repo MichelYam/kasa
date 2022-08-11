@@ -14,13 +14,6 @@ export default function Header() {
     return (
         <header className='header'>
             <NavBar splitLocation={splitLocation} />
-            {pathname === "/" ?
-                <div className='header_banner'>
-                    <p>Chez vous, partout et ailleurs</p>
-                </div> : splitLocation[1] === 'about' ?
-                    <div className='header_banner_about'>
-                    </div> : null
-            }
         </header>
     )
 }
