@@ -1,21 +1,35 @@
-import React from 'react';
-import { Navigate, useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 // components
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 import Collapse from '../components/Collapse/Collapse';
 import Caroussel from '../components/Carrousel/Carousel';
 import Star from '../components/Star/Star';
 import Tag from '../components/Tag/Tag';
+import { getApartmentByID } from '../service/apartment';
 
-export default function Apartment({ apartmentsData }) {
+export default function Apartment() {
+
   const { id } = useParams(); //get id form url
-  const apartment = apartmentsData.find((ele) => ele.id === id); // get all information about location
+  const navigate = useNavigate()
+  const [apartment, setApartment] = useState({ pictures: [], host: { "name": '', "picture": '' }, rating: '', location: '', equipments: [], tags: [] });
+
+  useEffect(() => {
+    const getAllApparts = async () => {
+      const apartmentData = await getApartmentByID(id);
+      if (apartmentData === null) {
+        navigate("/error");
+      } else {
+        setApartment(apartmentData.apartmentData)
+      }
+    }
+    console.log("useEffect runs")
+    getAllApparts()
+  }, [id])
+
+  console.log("component rendered")
+
   // redirect user if apartment not found
-  if (!apartment) {
-    return <Navigate to="/error" />
-  }
   return (
     <>
       {/* <Header /> */}
