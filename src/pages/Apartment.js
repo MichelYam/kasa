@@ -25,14 +25,12 @@ export default function Apartment() {
     }
     console.log("useEffect runs")
     getAllApparts()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
-
-  console.log("component rendered")
 
   // redirect user if apartment not found
   return (
     <>
-      {/* <Header /> */}
       <Caroussel pictures={apartment.pictures} />
       <div className='flex apartment'>
         <div className='apartment-location'>
@@ -69,7 +67,6 @@ export default function Apartment() {
           </ul>
         </Collapse>
       </div>
-      {/* <Footer /> */}
     </>
   )
 }
