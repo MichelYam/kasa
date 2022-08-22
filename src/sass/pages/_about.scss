@@ -11,3 +11,9 @@
         }
     }
 }
+
+.header_banner_about{
+    @media screen and (max-width: 425px) {
+        min-height: 223px;
+    }
+}
